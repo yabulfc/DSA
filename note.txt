@@ -1,0 +1,229 @@
+DSA (Data structure and Algorithm)
+
+what are data structure?
+. A way of organizing and storing the data in memory
+. Helps to access and manipulate the data more effectively 
+  and efficiently , i.e getting the desired result in minimum time
+
+
+
+                    DATA structures
+               /                      \
+             Linear                  non-Linear
+      /     |    |    \               /       \
+Arrays Stacks  Queues   Linked      Trees   Graphs
+                        lists 
+
+
+
+#Linear Data structure 
+
+. Arrange the elements in sequential or linear fashions
+.Each element is attached to its previous and next adjacent element.
+
+    .Static Data structure - has a fixed memory size. The array is an example
+    .Dynamic Data structure - size can change dynamically at runtime. They are efficiently
+                              in memory as compared to the static data str.
+                              eg. Stack,Queue and Linked list 
+
+    
+    .It can be traversed in a single run
+    .Time compexity increses as data increses
+    .works for software dev.
+
+
+#Non-linear Data structure
+
+    .Arrange the elements in non-sequential order(a hierarchial order).
+    .The linear data structures are Tress,Graphs,Tables,Sets ...
+    .The elents are present at various level , so we can't traverse them in a single run
+    .Time complexity remain the same 
+    .works well in image processing and artificial intelligence.
+
+
+    #DAS Advantages
+
+    .Language independence
+    .improves logical building
+    .improved problems solving apporach
+    .Enables to solve real world problems
+    .Helps in writing optimize compared
+    .improves adaptability to emerging tech Stacks
+
+
+# Common data structure operations
+
+.Insertion: insert a new element to a data structure 
+.Deletion : delete an existing element from a data structure
+.Searching : search an element inside a data structure
+.Sorting : Arranging the element of a data structure in a specified order
+.Traversa : Visit each element inside a data structure in a specified order
+.Merging : combinig two similar data structures together
+
+
+
+Abstract Data Types(ADTs)
+
+.Abstract data types are data structures that define the declaration of data and operations
+ but not how these operations are implemented
+.The example of ADTs are array , Linked list , Stack , Queue , Binary Tree , Graphs etc...
+.The implementation of ADT will be decided based on the programming language you will use
+
+
+
+What is an Algorithm?
+
+.A step by step procedure to solve a given problems
+.There are two main criteria to judge an Algorithm
+    Effectivness : How many steps it will take to give the desired result?
+    Efficiency : How much time and memory it will take to excute?
+
+.An algorithm which takes the minimum steps to produce the desired result is 
+ considerd the most effective
+.An algorithm which takes the minimum time and less space to excute is considered the
+ most efficient
+
+
+ Eg:       
+            An algorithm for adding two numbers
+            step 1 - start
+            step 2 - declaration variables num1 ,nums2 ,and sum
+            step 3 - read the values of the num1 and num2 and assign the result to sum
+            step 4 - ADD the value of num1 and num2 and assign the result to sum
+                        sum = num1 + num2
+            step 5 - display the value sum
+
+
+Algorithm Analysis
+
+.Analysis of an algorithm helps to determine the time and space consumption to excute it
+.Helps to predict the behavior of an algorithm with out implementing it on a specifc computer
+  
+
+  worst case - take maximum time to excute (mostly used )
+  best case - take minimum time to excute(very rarely used )
+  average case - a prediction time to excute (rarely used)
+
+
+  Asymptotic Analysis
+.Asymptotic Analysis is a way of understanding how an algorithm begaves or performs with the change in the input size
+    for example : in bubble sort , when the input array is in reverse order , the algorithm takes the 
+                    maximum time (quadratic) to sort the element i.e the  worst case
+                .But , when the input array is already sorted , the time taken by the algorithm is linear i.e best case
+                .when the inout array is neither sorted nor in reverse order , then it take average time i.e average case
+
+.Big -O Notation (O-Notation) : represents the upper bound of the running time of an algorithm . it gives the worsy
+                                case complexity of an algorithm
+.Omega Notation : represents the lower bound of the running time of an algortime .
+                     it provides the best case complexity of an algortime
+.Theta Notation : represents the upper and lower bound of running time of an algorithm.
+                     it is used for analyizing the average -case complexity of an algorithm
+
+
+
+
+#Big-O Notation
+
+.O(1) - constant Runtime complexity
+    - always take the sme amount to be excuted
+    - input size doesn't matter,complexity remains the same 
+    - eg : accessing an element from an array at a given index. this will run only once 
+            which is constant
+
+    syntax->   Numbers = [10 , 20 ,30 ] 
+               print(Numbers[2])  
+
+.O(log n) - Logarithimic  Runtime complexity
+    -complexity goes up linearly while the Input goes up exponentially.
+    -O(log n ) notation is more scalable than O(n) and O(n^2) as the input size grows larger and larger
+
+    eg : 
+
+          
+            n = 100
+            i = 1
+          
+            while i < n:
+                print(i)
+                i = i * 2    # A loop is O(log n) when the variable changes multiplicatively, not additively which is O(n).
+          
+          
+
+.O(n) - linear Runtime compexity
+    - The time to excute the algorithm is directly proportional to the input size neither
+    -compexity grows linearly over time as the number of inputs increses i.e higher the number of inputs 
+        , the higer the complexity
+     
+    eg:  Looping over all the items of an array
+
+
+         arr = [0 ,1 ,2 ,3 ,4]
+
+         for i in arr:
+            print(arr[i])
+
+
+.O(n logn) - linearithimc Runtime compexity
+ 
+    -The time to excute the algorithm will grow at a rate that is between linear and exponentially
+    -Faster than linear but slower than exponental
+
+    eg : Merge sort  , quicksort and heapsort
+
+         n = 100
+        for i in range(n):          # runs n times
+            j = 1
+            while j < n:            # runs log n times
+                 j*= 2
+
+.O(n^c) - Polynomial Runtime complexity
+
+    -The time to excute the algorithm is directly proportional to the power (c) of the input size n
+    -like in quadratic it is the square of input size n
+
+    eg:    iteration of nested loop
+
+            n = 10
+            for i in range(n):
+                for j in range(i):
+                    print(n)
+
+
+.O(c^n) - exponental Runtime complexity: O(2^n)
+
+    -The time to excute the algoritm becomes double with each addition to the input dataset
+    -These are often recursive algorithms that solve a problem of size n by recursively solving two 
+        smaller problems of size n-1
+    
+    eg :    
+
+        def Fibonacci(n):
+            if n <= 1:
+                return n
+            else:
+                return Fibonacci(n-2) + Fibonacci(n-1)
+
+
+. O(n!) - Factorial Runtime complexity
+
+    -The runtime for calculating Factorials grows exponental with the number of inputs
+        eg : 5! is 120 , while 10! is 3628800
+    -Grows pretty quikly , this algorithm has the worst time complexity
+
+    eg: 
+        permutaion of a storing
+
+        def print_permutations(nums):
+            if len(nums) == 0:
+                print([])
+                return
+    
+            for i in range(len(nums)):
+                remaining = nums[:i] + nums[i+1:]
+                print(nums[i], end=" ")
+                print_permutations(remaining)
+
+        print_permutations([1, 2, 3])
+
+
+
