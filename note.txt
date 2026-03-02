@@ -140,12 +140,13 @@ Algorithm Analysis
     eg : 
 
           
-            n = 100
-            i = 1
+      n = 100
+      i = 1
           
-            while i < n:
-                print(i)
-                i = i * 2    # A loop is O(log n) when the variable changes multiplicatively, not additively which is O(n).
+      while i < n:
+         print(i)
+         i = i * 2    # A loop is O(log n) when the variable changes multiplicatively,
+                          not additively which is O(n).
           
           
 
