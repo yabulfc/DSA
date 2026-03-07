@@ -42,13 +42,13 @@ Array Advantages
 
 Array operations
 
- -Traversal
- -Insertion
- -Deletion
- -search
- -update
- -Sorting
- -Merging
+ -Traversal :going through the array
+ -Insertion : add data in the array
+ -Deletion : removing data from the array
+ -search : finding a data from the array
+ -update : changing / ugrading data
+ -Sorting : making data in order
+ -Merging : concatinating datas
 
  Array usages
   .used to store different variables of the same types
@@ -57,6 +57,7 @@ Array operations
   .databases recordes are also implemented by the array
   .used for cpu scheduling
   .used to implemente other data structures like staks,qeues ,heaps ,hash ,hash tables ...etc
+
 
 
   
