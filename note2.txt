@@ -1,0 +1,70 @@
+*Array and Strings
+
+What is Array?
+
+-An array is a fixed size data structure to store the same types of element
+
+-Elements are accessible by an index number
+
+-Stored in contiguous memnory locations, where the lowest memory address corresponds to the first elemnt 
+    & the highest memory address corresponds to the last element.
+
+-Every element of an array can be accessed in O(1) time
+
+
+
+       lower address         higher address
+              ^                ^
+              |                |
+            | 6 | 8 | 4 | 3 | 2 |
+      index:  0   1   2   3   4
+
+
+ #Types of Arrays
+
+ . Single-Dimensional(1-D) Array
+   -Elements are stored in rows only
+   
+ . Two-Dimensional(2-D) Array
+   -Elements are stored in rows and coloumns format
+   - The storage of array elements takes place row wise or column wise
+
+ . Three-Dimensional(3-D) Array
+   -An extention two dimensional array with the addition of depth
+   - The storage of array elements takes place row wise or column wise
+
+
+Array Advantages
+
+ -constant time access
+ -optimal memory usage
+
+
+Array operations
+
+ -Traversal
+ -Insertion
+ -Deletion
+ -search
+ -update
+ -Sorting
+ -Merging
+
+ Array usages
+  .used to store different variables of the same types
+  .used in solving matrix problems
+  .used in implementing sorting algorithm
+  .databases recordes are also implemented by the array
+  .used for cpu scheduling
+  .used to implemente other data structures like staks,qeues ,heaps ,hash ,hash tables ...etc
+
+
+  
+
+          
+
+
+
+ 
+
+
