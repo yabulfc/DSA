@@ -9,3 +9,4 @@ def update(num , index):  # a function that take a number  and update/replace it
                 print(num)
 
 update(100 , 2)  
+#updated
