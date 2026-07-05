@@ -17,7 +17,7 @@
 
 #Answer:
 def sort_array(arr):
-    # Count the number of 0s, 1s, and 2s
+    # Count the number of 0s, 1s, and 2s  
     count_0 = arr.count(0)
     count_1 = arr.count(1)
     count_2 = arr.count(2)
